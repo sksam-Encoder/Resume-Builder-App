@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activites.MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_700">
+
+
+
+  <TextView
+      android:text="Res My World"
+      android:textColor="@color/white"
+      android:textSize="30sp"
+      android:id="@+id/head"
+      android:layout_centerHorizontal="true"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/head"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile" />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Upload Img"
+      android:layout_margin="10dp"
+      android:layout_below="@+id/imageView"
+      android:layout_alignParentRight="true"
+      android:background="@color/purple_700"
+      android:id="@+id/chooseImg"/>
+
+    <EditText
+        android:id="@+id/nme"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter Full name"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+  <EditText
+      android:id="@+id/phne"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/wrk_plat"
+      android:layout_marginLeft="10dp"
+      android:backgroundTint="@color/white"
+      android:ems="10"
+      android:hint="phone"
+      android:inputType="number"
+      android:textColorHint="@color/white" />
+
+  <EditText
+
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/phne"
+      android:layout_marginLeft="10dp"
+      android:ems="10"
+      android:inputType="textEmailAddress"
+      android:id="@+id/em"
+      android:hint="Email"
+      android:textColorHint="@color/white"
+      android:backgroundTint="@color/white"/>
+
+  <EditText
+
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/em"
+      android:layout_marginLeft="10dp"
+      android:ems="10"
+      android:focusableInTouchMode="true"
+      android:inputType="text"
+      android:hint="Social Link"
+      android:textColorHint="@color/white"
+      android:id="@+id/social"
+      android:backgroundTint="@color/white"/>
+
+  <EditText
+      android:id="@+id/wrk_plat"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/nme"
+      android:layout_marginLeft="10dp"
+      android:backgroundTint="@color/white"
+      android:hint="Enter Workplatfor"
+      android:textColorHint="@color/white" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/social"
+      android:background="@color/grad"
+      android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grad"
+        android:orientation="horizontal">
+
+      <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/rad_grp"
+           android:layout_marginHorizontal="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:layout_margin="5dp"
+            android:text="male"
+            android:textColor="@color/black"
+            android:paddingRight="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:layout_margin="5dp"
+            android:paddingRight="5dp"
+            android:text="female"
+            android:textColor="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:paddingRight="7dp"
+            android:text="Others" />
+
+      </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black" />
+
+    <EditText
+
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/grad"
+        android:focusableInTouchMode="true"
+        android:inputType="textMultiLine"
+        android:hint="Enter Main Address"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black" />
+
+    <EditText
+
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/em"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/grad"
+        android:focusableInTouchMode="true"
+        android:inputType="textMultiLine"
+        android:hint="Enter your Work Experience"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Education"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grad"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/date1"
+          android:hint="Start Date"
+          android:textColor="@color/black"
+          android:textColorHint="@color/black"
+          android:inputType="date" />
+
+      <EditText
+          android:id="@+id/edu1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Education"
+          android:textColorHint="@color/black"
+          android:textColor="@color/black" />
+
+    </LinearLayout>
+    <!--  first education and date  -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grad"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/date2"
+          android:text="Start Date"
+          android:inputType="date"
+          android:textColor="@color/black"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/edu2"
+          android:hint="Education"
+          android:textColor="@color/black"
+          android:textColorHint="@color/black"
+          />
+    </LinearLayout>
+    <!-- 2nd container for date and education.-->
+
+
+
+
+
+    <EditText
+
+        android:id="@+id/AdExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/em"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/grad"
+        android:focusableInTouchMode="true"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:hint="Additional Activities"
+        android:textColorHint="@color/black"
+         />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Languages"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black" />
+
+
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/lan"
+       android:orientation="horizontal">
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/lan1"
+           android:text="@string/Language1"
+           android:textColor="@color/black"
+           android:layout_marginHorizontal="3dp"
+           />
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/Language2"
+          android:textColor="@color/black"
+          android:layout_marginHorizontal="3dp"
+          android:id="@+id/lan2"/>
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/Language3"
+          android:textColor="@color/black"
+           android:layout_marginHorizontal="3dp"
+           android:id="@+id/lan3"/>
+
+     <CheckBox
+         android:id="@+id/lan4"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="2dp"
+         android:text="@string/Language4"
+         android:textColor="@color/black"/>
+
+
+   </RadioGroup>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Create" />
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>
+
+
+
+
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyBio</string>
+    <string name="Language1">English</string>
+    <string name="Language2">Spanish</string>
+    <string name="Language3">Urdu/Hindi</string>
+    <string name="Language4">French</string>
+
+
+</resources>
